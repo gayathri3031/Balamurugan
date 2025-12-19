@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Balamurugan Industries</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Sree Balamurugan Industries</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#capabilities">Capabilities</a></li>
+                    <li><a href="#applications">Applications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   <section class="hero" id="hero">
+  <div class="hero-text">
+    <h2>Manufacturing Industry</h2>
+    <p>
+      Sree Balamurugan Industries is a trusted manufacturer of high-quality
+      electrical infrastructure components. With a focus on precision
+      engineering and durable construction, we cater to electrical utilities,
+      contractors, and infrastructure developers across the region.
+    </p>
+    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Get in Touch →</button>
+  </div>
+  <div class="hero-image">
+    <img src="images/Stay Clamp.png" alt="Electrical Components">
+  </div>
+</section>
+
+    <main>
+        <section id="about-us" class="main-content">
+            <div class="section-content">
+                <h2>Company Overview</h2>
+                <p>Sree Balamurugan Industries is a trusted manufacturer of high-quality electrical infrastructure components. With a focus on precision engineering and durable construction, we cater to the needs of electrical utilities, contractors, and infrastructure developers across the region. Our commitment to quality and timely delivery has made us a reliable name in the industry.</p>
+            </div>
+            <section id="stats" class="stats">
+                <!-- Stats will be dynamically loaded here -->
+            </section>
+        </section>
+        <section id="products">
+  <h2>Our Product Range</h2>
+
+  <div class="slider-container">
+    <button class="nav-prev">&#10094;</button>
+
+    <div id="product-list" class="product-slider">
+      <!-- Product cards dynamically loaded here -->
+    </div>
+
+    <button class="nav-next">&#10095;</button>
+  </div>
+</section>
+
+        <section id="capabilities">
+  <h2>Manufacturing Capabilities</h2>
+  <p class="cap-desc">
+    Our facility is equipped with skilled labor, quality materials, and efficient machinery to meet bulk production demands.
+  </p>
+
+  <div class="cap-grid">
+    <div class="cap-card">
+      <h3>⚙️ Advanced Machinery</h3>
+      <p>Precision equipment ensuring consistent quality output</p>
+    </div>
+
+    <div class="cap-card">
+      <h3>👷 Skilled Workforce</h3>
+      <p>Experienced technicians and engineers</p>
+    </div>
+
+    <div class="cap-card">
+      <h3>✅ Quality Assurance</h3>
+      <p>Stringent checks to meet industry standards</p>
+    </div>
+
+    <div class="cap-card">
+      <h3>🚚 Bulk Production</h3>
+      <p>Reliable fulfillment of large-scale orders</p>
+    </div>
+  </div>
+</section>
+
+<section id="applications">
+  <h2>Industry Applications</h2>
+
+  <ul class="timeline">
+    <li>Electrical power distribution and transmission</li>
+    <li>Rural and urban electrification projects</li>
+    <li>Infrastructure and utility development</li>
+    <li>Renewable energy projects (wind & solar)</li>
+  </ul>
+</section>
+
+       <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+
+    <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div class="info-card" onclick="window.location.href='tel:+919443527371'">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <p class="title">+91 94435 27371</p>
+                    <p class="subtitle">Call for immediate assistance</p>
+                </div>
+            </div>
+
+            <div class="info-card" onclick="window.location.href='mailto:balaa646@gmail.com'">
+                <i class="fas fa-envelope-open-text"></i>
+                <div>
+                    <p class="title">balaa646@gmail.com</p>
+                    <p class="subtitle">Send detailed inquiries</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Your name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Your email" required>
+
+            <label>Message</label>
+            <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+
+            <button type="submit">Submit</button>
+            <p id="successMsg"></p>
+        </form>
+    </div>
+</section>
+
+    </main>
+    <footer>
+        <div class="container" style="text-align: center; padding: 0.1rem; font-size: 0.75rem;">
+            <p>&copy; 2025 Sree Balamurugan Industries. All rights reserved.</p>
+            <div style="margin-top: 0.1rem;">
+                <a href="tel:+919443527371" style="margin: 0 0.5rem; color: #007BFF; font-size: 1.2rem; text-decoration: none;">
+                    <i class="fas fa-phone-alt"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" style="margin: 0 0.5rem; color: #E4405F; font-size: 1.2rem; text-decoration: none;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:balaa646@gmail.com" style="margin: 0 0.5rem; color: #D44638; font-size: 1.2rem; text-decoration: none;">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+    const prevButton = document.querySelector('.nav.prev');
+    const nextButton = document.querySelector('.nav.next');
+    const productSlider = document.querySelector('.product-slider');
+
+    let scrollAmount = 0;
+    const scrollStep = 300; // Adjust scroll step as needed
+
+    prevButton.addEventListener('click', () => {
+        scrollAmount = Math.max(scrollAmount - scrollStep, 0);
+        productSlider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    nextButton.addEventListener('click', () => {
+        scrollAmount = Math.min(scrollAmount + scrollStep, productSlider.scrollWidth - productSlider.clientWidth);
+        productSlider.scrollTo({ left: scrollAmount, behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
