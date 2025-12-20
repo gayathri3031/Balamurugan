@@ -1,6 +1,6 @@
 console.log('Fetching products.csv...');
 document.addEventListener("DOMContentLoaded", () => {
-
+ 
   fetch('../products.csv')
     .then(response => response.text())
     .then(data => {
@@ -167,6 +167,7 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
     const navMenu = document.querySelector('nav ul');
     navMenu.classList.toggle('show');
 });
+
 
 
 
