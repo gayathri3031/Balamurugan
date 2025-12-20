@@ -1,7 +1,7 @@
 console.log('Fetching products.csv...');
 document.addEventListener("DOMContentLoaded", () => {
 
-  fetch('./products.csv')
+  fetch('../products.csv')
     .then(response => response.text())
     .then(data => {
       const rows = data.split('\n').slice(1);
@@ -105,7 +105,7 @@ function submitForm(e) {
     e.target.reset();
 }
 console.log('Fetching stats.csv...');
-fetch('./stats.csv')
+fetch('../stats.csv')
     .then(response => {
         console.log('Response status:', response.status);
         if (!response.ok) {
@@ -167,6 +167,7 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
     const navMenu = document.querySelector('nav ul');
     navMenu.classList.toggle('show');
 });
+
 
 
 
